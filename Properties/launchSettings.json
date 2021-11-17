@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "dz1": {
+      "commandName": "Project",
+      "commandLineArgs": "data/instance1.csv dp pv 10 1"
+    }
+  }
+}

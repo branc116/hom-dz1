@@ -7,7 +7,7 @@ var players = lines
         el[2],
         el[3],
         int.Parse(el[4]),
-        (int)(double.Parse(el[5]) * 10))
+        (int)(double.Parse(el[5])))
     ).ToList();
 
 
@@ -107,11 +107,12 @@ IEnumerable<Player> DpDistinct(IEnumerable<Player> players, IEnumerable<Player> 
         dp[i] = dp[i - 1];
         for (int j = 1; j <= i; ++j) {
             var (value, rooster, clubs, positions) = dp[i - j];
-            var newP = players.Where(p => p.Price == j)
+            var newPs = players.Where(p => p.Price == j)
                 .Where(p => clubs[p.Club] < 3)
                 .Where(p => positions[p.Positions] < Help.MAX_POS[p.Positions])
                 .Where(p => !rooster.Contains(p))
-                .OrderBy(p => r.NextInt64()).FirstOrDefault();
+                .OrderBy(p => r.NextInt64());
+            var newP = newPs.FirstOrDefault();
             if (newP is not null && dp[i].Item1 < value + newP.Value){
                 var nClubs = new Dictionary<string, int>(clubs);
                 nClubs[newP.Club]++;
@@ -128,6 +129,43 @@ IEnumerable<Player> DpDistinct(IEnumerable<Player> players, IEnumerable<Player> 
     if (besti == -1)
         return selected;
     return dp[besti].Item2.ToList();
+}
+
+IEnumerable<Player> DpDistinct2( IEnumerable<Player> players, IEnumerable<Player> selected, int toLeave, List<(string constraintName, Func<IEnumerable<Player>, bool> predicat)> cs ) {
+    var r = new Random((int)DateTime.Now.Ticks);
+    var thinedOut = selected.OrderBy(i => r.NextInt64()).Take(toLeave).ToHashSet(). ToList();
+    var toGo = 1000-thinedOut.Select(p => p.Price).Sum();
+    var dp = new (Dictionary<(MyList<int> teams, MyList<int> positions), (int value, HashSet<Player> roster)>)[toGo];
+    dp[0] = (0, thinedOut.ToHashSet( ),
+        players.GroupBy( p => p.Club ).ToDictionary( p => p.Key, p => thinedOut.Count( j => j.Club == p.Key ) ),
+        players.GroupBy( p => p.Positions ).ToDictionary( p => p.Key, p => thinedOut.Count( j => j.Positions == p.Key ) ));
+    var (bestv, besti) = (0, -1);
+    for ( int i = 1 ; i < toGo ; ++i ) {
+        dp[i] = dp[i - 1];
+        for ( int j = 1 ; j <= i ; ++j ) {
+            var (value, rooster, clubs, positions) = dp[i - j];
+            var newPs = players.Where(p => p.Price == j)
+                .Where(p => clubs[p.Club] < 3)
+                .Where(p => positions[p.Positions] < Help.MAX_POS[p.Positions])
+                .Where(p => !rooster.Contains(p))
+                .OrderBy(p => r.NextInt64());
+            var newP = newPs.FirstOrDefault();
+            if ( newP is not null && dp[i].Item1 < value + newP.Value ) {
+                var nClubs = new Dictionary<string, int>(clubs);
+                nClubs[newP.Club]++;
+                var nPositions = new Dictionary<Positions, int>(positions);
+                nPositions[newP.Positions]++;
+                dp[i] = (value + newP.Value, rooster.Append( newP ).ToHashSet( ), nClubs, nPositions);
+            }
+        }
+        if ( dp[i].Item1 > bestv && cs.Select( c => c.predicat( dp[i].Item2 ) ).All( val => val ) ) {
+            bestv = dp[i].Item1;
+            besti = i;
+        }
+    }
+    if ( besti == -1 )
+        return selected;
+    return dp[besti].Item2.ToList( );
 }
 
 IEnumerable<Player> Repeate(Func<IEnumerable<Player>, IEnumerable<Player>> gether, IEnumerable<Player> init, int times) {
@@ -161,5 +199,22 @@ public static class Help {
         foreach(var kv in d) {
             System.Console.WriteLine($"{kv.Key} => {kv.Value}");
         }
+    }
+}
+
+public class MyList<T> : List<T> {
+    public override int GetHashCode( ) {
+        var hc = Count.GetHashCode();
+        for ( int i = 0 ; i < this.Count ; ++i )
+            hc = HashCode.Combine( hc, i, this[i] );
+        return hc;
+    }
+    public override bool Equals( object? obj ) {
+        if (obj is not MyList<T> l) return false;
+        if (l.Count != this.Count) return false;
+        for ( int i = 0 ;i < this.Count ; ++i ) {
+            if (!(this[i]?.Equals(l[i]) ?? true)) return false;
+        }
+        return true;
     }
 }
