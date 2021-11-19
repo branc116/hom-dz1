@@ -1,0 +1,178 @@
+===============================================
+DEF
+Player { Index = 71, Positions = DEF, Name = Wan-Bissaka, Club = Man Utd, Value = 144, Price = 55 }
+Player { Index = 72, Positions = DEF, Name = Cresswell, Club = West Ham, Value = 153, Price = 55 }
+Player { Index = 77, Positions = DEF, Name = Targett, Club = Aston Villa, Value = 138, Price = 50 }
+Player { Index = 81, Positions = DEF, Name = Dunk, Club = Brighton, Value = 130, Price = 50 }
+Player { Index = 86, Positions = DEF, Name = Keane, Club = Everton, Value = 127, Price = 50 }
+-----------------------------------
+GK
+Player { Index = 14, Positions = GK, Name = Fabianski, Club = West Ham, Value = 133, Price = 50 }
+Player { Index = 4, Positions = GK, Name = Mart�nez, Club = Aston Villa, Value = 186, Price = 55 }
+-----------------------------------
+MID
+Player { Index = 263, Positions = MID, Name = Harrison, Club = Leeds, Value = 160, Price = 60 }
+Player { Index = 276, Positions = MID, Name = Soucek, Club = West Ham, Value = 147, Price = 60 }
+Player { Index = 218, Positions = MID, Name = Son, Club = Spurs, Value = 228, Price = 100 }
+Player { Index = 216, Positions = MID, Name = Fernandes, Club = Man Utd, Value = 244, Price = 120 }
+Player { Index = 306, Positions = MID, Name = Dallas, Club = Leeds, Value = 171, Price = 55 }
+-----------------------------------
+FW
+Player { Index = 424, Positions = FW, Name = Watkins, Club = Aston Villa, Value = 168, Price = 75 }
+Player { Index = 420, Positions = FW, Name = Calvert-Lewin, Club = Everton, Value = 165, Price = 80 }
+Player { Index = 421, Positions = FW, Name = Bamford, Club = Leeds, Value = 194, Price = 80 }
+-----------------------------------
+14,424,420,263,276,218,216,71,72,77,81
+4,86,306,421
+Total value: 2488, Total cost: 995
+===============================================
+
+
+===============================================
+
+GK
+Player { Index = 4, Positions = GK, Name = Mart�nez, Club = Aston Villa, Value = 186, Price = 55 }
+Player { Index = 21, Positions = GK, Name = Guaita, Club = Crystal Palace, Value = 124, Price = 45 }
+-----------------------------------
+DEF
+Player { Index = 72, Positions = DEF, Name = Cresswell, Club = West Ham, Value = 153, Price = 55 }
+Player { Index = 71, Positions = DEF, Name = Wan-Bissaka, Club = Man Utd, Value = 144, Price = 55 }
+Player { Index = 81, Positions = DEF, Name = Dunk, Club = Brighton, Value = 130, Price = 50 }
+Player { Index = 77, Positions = DEF, Name = Targett, Club = Aston Villa, Value = 138, Price = 50 }
+Player { Index = 106, Positions = DEF, Name = Coufal, Club = West Ham, Value = 128, Price = 50 }
+-----------------------------------
+FW
+Player { Index = 421, Positions = FW, Name = Bamford, Club = Leeds, Value = 194, Price = 80 }
+Player { Index = 420, Positions = FW, Name = Calvert-Lewin, Club = Everton, Value = 165, Price = 80 }
+Player { Index = 424, Positions = FW, Name = Watkins, Club = Aston Villa, Value = 168, Price = 75 }
+-----------------------------------
+MID
+Player { Index = 306, Positions = MID, Name = Dallas, Club = Leeds, Value = 171, Price = 55 }
+Player { Index = 216, Positions = MID, Name = Fernandes, Club = Man Utd, Value = 244, Price = 120 }
+Player { Index = 218, Positions = MID, Name = Son, Club = Spurs, Value = 228, Price = 100 }
+Player { Index = 263, Positions = MID, Name = Harrison, Club = Leeds, Value = 160, Price = 60 }
+Player { Index = 246, Positions = MID, Name = Ward-Prowse, Club = Southampton, Value = 156, Price = 65 }
+-----------------------------------
+4,421,420,306,216,218,263,72,71,81,77
+21,106,246,424
+Total value: 2489, Total cost: 995
+===============================================
+
+===============================================
+
+GK
+Player { Index = 4, Positions = GK, Name = Mart�nez, Club = Aston Villa, Value = 186, Price = 55 }
+Player { Index = 3, Positions = GK, Name = Ederson, Club = Man City, Value = 160, Price = 60 }
+-----------------------------------
+FW
+Player { Index = 424, Positions = FW, Name = Watkins, Club = Aston Villa, Value = 168, Price = 75 }
+Player { Index = 412, Positions = FW, Name = Kane, Club = Spurs, Value = 242, Price = 125 }
+Player { Index = 421, Positions = FW, Name = Bamford, Club = Leeds, Value = 194, Price = 80 }
+-----------------------------------
+DEF
+Player { Index = 72, Positions = DEF, Name = Cresswell, Club = West Ham, Value = 153, Price = 55 }
+Player { Index = 77, Positions = DEF, Name = Targett, Club = Aston Villa, Value = 138, Price = 50 }
+Player { Index = 106, Positions = DEF, Name = Coufal, Club = West Ham, Value = 128, Price = 50 }
+Player { Index = 81, Positions = DEF, Name = Dunk, Club = Brighton, Value = 130, Price = 50 }
+Player { Index = 71, Positions = DEF, Name = Wan-Bissaka, Club = Man Utd, Value = 144, Price = 55 }
+-----------------------------------
+MID
+Player { Index = 276, Positions = MID, Name = Soucek, Club = West Ham, Value = 147, Price = 60 }
+Player { Index = 246, Positions = MID, Name = Ward-Prowse, Club = Southampton, Value = 156, Price = 65 }
+Player { Index = 306, Positions = MID, Name = Dallas, Club = Leeds, Value = 171, Price = 55 }
+Player { Index = 218, Positions = MID, Name = Son, Club = Spurs, Value = 228, Price = 100 }
+Player { Index = 263, Positions = MID, Name = Harrison, Club = Leeds, Value = 160, Price = 60 }
+-----------------------------------
+4,424,412,276,246,306,218,72,77,106,81
+3,421,71,263
+Total value: 2505, Total cost: 995
+===============================================
+===============================================
+
+FW
+Player { Index = 412, Positions = FW, Name = Kane, Club = Spurs, Value = 242, Price = 125 }
+Player { Index = 421, Positions = FW, Name = Bamford, Club = Leeds, Value = 194, Price = 80 }
+Player { Index = 469, Positions = FW, Name = Nlundulu, Club = Southampton, Value = 13, Price = 45 }
+-----------------------------------
+MID
+Player { Index = 216, Positions = MID, Name = Fernandes, Club = Man Utd, Value = 244, Price = 120 }
+Player { Index = 218, Positions = MID, Name = Son, Club = Spurs, Value = 228, Price = 100 }
+Player { Index = 263, Positions = MID, Name = Harrison, Club = Leeds, Value = 160, Price = 60 }
+Player { Index = 306, Positions = MID, Name = Dallas, Club = Leeds, Value = 171, Price = 55 }
+Player { Index = 370, Positions = MID, Name = Elneny, Club = Arsenal, Value = 50, Price = 45 }
+-----------------------------------
+DEF
+Player { Index = 48, Positions = DEF, Name = Robertson, Club = Liverpool, Value = 161, Price = 70 }
+Player { Index = 71, Positions = DEF, Name = Wan-Bissaka, Club = Man Utd, Value = 144, Price = 55 }
+Player { Index = 72, Positions = DEF, Name = Cresswell, Club = West Ham, Value = 153, Price = 55 }
+Player { Index = 77, Positions = DEF, Name = Targett, Club = Aston Villa, Value = 138, Price = 50 }
+Player { Index = 195, Positions = DEF, Name = Duffy, Club = Brighton, Value = 0, Price = 40 }
+-----------------------------------
+GK
+Player { Index = 4, Positions = GK, Name = Mart_nez, Club = Aston Villa, Value = 186, Price = 55 }
+Player { Index = 36, Positions = GK, Name = R_narsson, Club = Arsenal, Value = 1, Price = 40 }
+-----------------------------------
+4,412,421,216,218,263,306,48,71,72,77
+370,469,36,195
+Total value: 2085, Total cost: 995
+===============================================
+===============================================
+
+FW
+Player { Index = 412, Positions = FW, Name = Kane, Club = Spurs, Value = 242, Price = 125 }
+Player { Index = 421, Positions = FW, Name = Bamford, Club = Leeds, Value = 194, Price = 80 }
+Player { Index = 468, Positions = FW, Name = Davis, Club = Aston Villa, Value = 23, Price = 45 }
+-----------------------------------
+MID
+Player { Index = 216, Positions = MID, Name = Fernandes, Club = Man Utd, Value = 244, Price = 120 }
+Player { Index = 218, Positions = MID, Name = Son, Club = Spurs, Value = 228, Price = 100 }
+Player { Index = 263, Positions = MID, Name = Harrison, Club = Leeds, Value = 160, Price = 60 }
+Player { Index = 306, Positions = MID, Name = Dallas, Club = Leeds, Value = 171, Price = 55 }
+Player { Index = 377, Positions = MID, Name = Bissouma, Club = Brighton, Value = 77, Price = 45 }
+-----------------------------------
+DEF
+Player { Index = 48, Positions = DEF, Name = Robertson, Club = Liverpool, Value = 161, Price = 70 }
+Player { Index = 71, Positions = DEF, Name = Wan-Bissaka, Club = Man Utd, Value = 144, Price = 55 }
+Player { Index = 72, Positions = DEF, Name = Cresswell, Club = West Ham, Value = 153, Price = 55 }
+Player { Index = 77, Positions = DEF, Name = Targett, Club = Aston Villa, Value = 138, Price = 50 }
+Player { Index = 206, Positions = DEF, Name = Manquillo, Club = Newcastle, Value = 28, Price = 40 }
+-----------------------------------
+GK
+Player { Index = 4, Positions = GK, Name = Mart_nez, Club = Aston Villa, Value = 186, Price = 55 }
+Player { Index = 41, Positions = GK, Name = Virg_nia, Club = Everton, Value = 2, Price = 40 }
+-----------------------------------
+4,412,421,216,218,263,306,48,71,72,77
+377,468,41,206
+Total value: 2151, Total cost: 995
+===============================================
+
+Greedy:
+===============================================
+
+MID
+Player { Index = 377, Positions = MID, Name = Bissouma, Club = Brighton, Value = 77, Price = 45 }
+Player { Index = 383, Positions = MID, Name = Brownhill, Club = Burnley, Value = 74, Price = 45 }
+Player { Index = 374, Positions = MID, Name = Douglas Luiz, Club = Aston Villa, Value = 72, Price = 45 }
+Player { Index = 398, Positions = MID, Name = Romeu, Club = Southampton, Value = 52, Price = 45 }
+Player { Index = 370, Positions = MID, Name = Elneny, Club = Arsenal, Value = 50, Price = 45 }
+-----------------------------------
+FW
+Player { Index = 468, Positions = FW, Name = Davis, Club = Aston Villa, Value = 23, Price = 45 }
+Player { Index = 469, Positions = FW, Name = Nlundulu, Club = Southampton, Value = 13, Price = 45 }
+Player { Index = 470, Positions = FW, Name = Obafemi, Club = Southampton, Value = 4, Price = 45 }
+-----------------------------------
+GK
+Player { Index = 41, Positions = GK, Name = Virg_nia, Club = Everton, Value = 2, Price = 40 }
+Player { Index = 36, Positions = GK, Name = R_narsson, Club = Arsenal, Value = 1, Price = 40 }
+-----------------------------------
+DEF
+Player { Index = 206, Positions = DEF, Name = Manquillo, Club = Newcastle, Value = 28, Price = 40 }
+Player { Index = 210, Positions = DEF, Name = Johnson, Club = West Ham, Value = 25, Price = 40 }
+Player { Index = 201, Positions = DEF, Name = Amartey, Club = Leicester, Value = 19, Price = 40 }
+Player { Index = 199, Positions = DEF, Name = Long, Club = Burnley, Value = 14, Price = 40 }
+Player { Index = 211, Positions = DEF, Name = Hoever, Club = Wolves, Value = 13, Price = 40 }
+-----------------------------------
+41,468,469,377,383,374,398,206,210,201,199
+370,470,36,211
+Total value: 467, Total cost: 640
+===============================================

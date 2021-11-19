@@ -1,0 +1,218 @@
+===============================================
+
+DEF
+Player { Index = 73, Positions = DEF, Name = van Dijk, Club = Liverpool, Value = 127, Price = 65 }
+Player { Index = 119, Positions = DEF, Name = Baldock, Club = Sheffield Utd, Value = 107, Price = 51 }
+Player { Index = 72, Positions = DEF, Name = Robertson, Club = Liverpool, Value = 123, Price = 70 }
+Player { Index = 71, Positions = DEF, Name = Alexander-Arnold, Club = Liverpool, Value = 146, Price = 77 }
+Player { Index = 130, Positions = DEF, Name = Lundstram, Club = Sheffield Utd, Value = 115, Price = 50 }
+-----------------------------------
+FW
+Player { Index = 556, Positions = FW, Name = Pukki, Club = Norwich, Value = 119, Price = 65 }
+Player { Index = 546, Positions = FW, Name = Rashford, Club = Man Utd, Value = 134, Price = 89 }
+Player { Index = 551, Positions = FW, Name = Ings, Club = Southampton, Value = 128, Price = 70 }
+-----------------------------------
+MID
+Player { Index = 310, Positions = MID, Name = Grealish, Club = Aston Villa, Value = 109, Price = 67 }
+Player { Index = 434, Positions = MID, Name = Cantwell, Club = Norwich, Value = 92, Price = 49 }
+Player { Index = 291, Positions = MID, Name = Richarlison, Club = Everton, Value = 123, Price = 81 }
+Player { Index = 283, Positions = MID, Name = De Bruyne, Club = Man City, Value = 161, Price = 108 }
+Player { Index = 343, Positions = MID, Name = Traor�, Club = Wolves, Value = 103, Price = 58 }
+-----------------------------------
+GK
+Player { Index = 19, Positions = GK, Name = Pope, Club = Burnley, Value = 105, Price = 47 }
+Player { Index = 10, Positions = GK, Name = Henderson, Club = Sheffield Utd, Value = 113, Price = 51 }
+-----------------------------------
+19,556,546,310,434,291,283,73,119,72,71
+10,130,343,551
+Total value: 1805, Total cost: 998
+===============================================
+
+
+===============================================
+
+DEF
+Player { Index = 72, Positions = DEF, Name = Robertson, Club = Liverpool, Value = 123, Price = 70 }
+Player { Index = 130, Positions = DEF, Name = Lundstram, Club = Sheffield Utd, Value = 115, Price = 50 }
+Player { Index = 73, Positions = DEF, Name = van Dijk, Club = Liverpool, Value = 127, Price = 65 }
+Player { Index = 71, Positions = DEF, Name = Alexander-Arnold, Club = Liverpool, Value = 146, Price = 77 }
+Player { Index = 119, Positions = DEF, Name = Baldock, Club = Sheffield Utd, Value = 107, Price = 51 }
+-----------------------------------
+MID
+Player { Index = 310, Positions = MID, Name = Grealish, Club = Aston Villa, Value = 109, Price = 67 }
+Player { Index = 283, Positions = MID, Name = De Bruyne, Club = Man City, Value = 161, Price = 108 }
+Player { Index = 343, Positions = MID, Name = Traor�, Club = Wolves, Value = 103, Price = 58 }
+Player { Index = 324, Positions = MID, Name = P�rez, Club = Leicester, Value = 104, Price = 62 }
+Player { Index = 291, Positions = MID, Name = Richarlison, Club = Everton, Value = 123, Price = 81 }
+-----------------------------------
+GK
+Player { Index = 19, Positions = GK, Name = Pope, Club = Burnley, Value = 105, Price = 47 }
+Player { Index = 10, Positions = GK, Name = Henderson, Club = Sheffield Utd, Value = 113, Price = 51 }
+-----------------------------------
+FW
+Player { Index = 556, Positions = FW, Name = Pukki, Club = Norwich, Value = 119, Price = 65 }
+Player { Index = 548, Positions = FW, Name = Jim�nez, Club = Wolves, Value = 131, Price = 77 }
+Player { Index = 551, Positions = FW, Name = Ings, Club = Southampton, Value = 128, Price = 70 }
+-----------------------------------
+548,310,283,324,72,73,71,119,291,10,551
+556,19,130,343
+Total value: 1814, Total cost: 999
+===============================================
+
+Greedy:
+
+===============================================
+
+GK
+Player { Index = 19, Positions = GK, Name = Pope, Club = Burnley, Value = 105, Price = 47 }
+Player { Index = 10, Positions = GK, Name = Henderson, Club = Sheffield Utd, Value = 113, Price = 51 }
+-----------------------------------
+DEF
+Player { Index = 130, Positions = DEF, Name = Lundstram, Club = Sheffield Utd, Value = 115, Price = 50 }
+Player { Index = 119, Positions = DEF, Name = Baldock, Club = Sheffield Utd, Value = 107, Price = 51 }
+Player { Index = 73, Positions = DEF, Name = van Dijk, Club = Liverpool, Value = 127, Price = 65 }
+Player { Index = 71, Positions = DEF, Name = Alexander-Arnold, Club = Liverpool, Value = 146, Price = 77 }
+Player { Index = 72, Positions = DEF, Name = Robertson, Club = Liverpool, Value = 123, Price = 70 }
+-----------------------------------
+MID
+Player { Index = 434, Positions = MID, Name = Cantwell, Club = Norwich, Value = 92, Price = 49 }
+Player { Index = 343, Positions = MID, Name = Traor�, Club = Wolves, Value = 103, Price = 58 }
+Player { Index = 324, Positions = MID, Name = P�rez, Club = Leicester, Value = 104, Price = 62 }
+Player { Index = 310, Positions = MID, Name = Grealish, Club = Aston Villa, Value = 109, Price = 67 }
+Player { Index = 330, Positions = MID, Name = Mount, Club = Chelsea, Value = 99, Price = 61 }
+-----------------------------------
+FW
+Player { Index = 556, Positions = FW, Name = Pukki, Club = Norwich, Value = 119, Price = 65 }
+Player { Index = 551, Positions = FW, Name = Ings, Club = Southampton, Value = 128, Price = 70 }
+Player { Index = 596, Positions = FW, Name = Ayew, Club = Crystal Palace, Value = 90, Price = 50 }
+-----------------------------------
+19,556,551,434,343,324,310,130,119,73,71
+10,72,330,596
+Total value: 1680, Total cost: 893
+===============================================
+
+Greedy:
+
+===============================================
+
+MID
+Player { Index = 532, Positions = MID, Name = Hayden, Club = Newcastle, Value = 54, Price = 43 }
+Player { Index = 521, Positions = MID, Name = Guendouzi, Club = Arsenal, Value = 43, Price = 43 }
+Player { Index = 534, Positions = MID, Name = Oriol Romeu, Club = Southampton, Value = 34, Price = 43 }
+Player { Index = 529, Positions = MID, Name = Choudhury, Club = Leicester, Value = 27, Price = 43 }
+Player { Index = 525, Positions = MID, Name = McCarthy, Club = Crystal Palace, Value = 25, Price = 43 }
+-----------------------------------
+FW
+Player { Index = 622, Positions = FW, Name = Connolly, Club = Brighton, Value = 40, Price = 43 }
+Player { Index = 618, Positions = FW, Name = Nketiah, Club = Arsenal, Value = 2, Price = 43 }
+Player { Index = 623, Positions = FW, Name = Brewster, Club = Liverpool, Value = 0, Price = 42 }
+-----------------------------------
+GK
+Player { Index = 61, Positions = GK, Name = Adri_n, Club = Liverpool, Value = 25, Price = 40 }
+Player { Index = 70, Positions = GK, Name = Button, Club = Brighton, Value = 0, Price = 39 }
+-----------------------------------
+DEF
+Player { Index = 277, Positions = DEF, Name = Pr_dl, Club = Watford, Value = 1, Price = 39 }
+Player { Index = 273, Positions = DEF, Name = Gibson, Club = Burnley, Value = 0, Price = 39 }
+Player { Index = 274, Positions = DEF, Name = Stearman, Club = Sheffield Utd, Value = 0, Price = 39 }
+Player { Index = 275, Positions = DEF, Name = Ramsay, Club = Southampton, Value = 0, Price = 39 }
+Player { Index = 276, Positions = DEF, Name = Navarro, Club = Watford, Value = 0, Price = 39 }
+-----------------------------------
+61,622,618,532,521,534,529,277,273,274,275
+525,623,70,276
+Total value: 251, Total cost: 617
+===============================================
+
+
+
+===============================================
+
+MID
+Player { Index = 280, Positions = MID, Name = Salah, Club = Liverpool, Value = 165, Price = 128 }
+Player { Index = 283, Positions = MID, Name = De Bruyne, Club = Man City, Value = 161, Price = 108 }
+Player { Index = 291, Positions = MID, Name = Richarlison, Club = Everton, Value = 123, Price = 81 }
+Player { Index = 343, Positions = MID, Name = Traor_, Club = Wolves, Value = 103, Price = 58 }
+Player { Index = 532, Positions = MID, Name = Hayden, Club = Newcastle, Value = 54, Price = 43 }
+-----------------------------------
+FW
+Player { Index = 542, Positions = FW, Name = Vardy, Club = Leicester, Value = 152, Price = 98 }
+Player { Index = 551, Positions = FW, Name = Ings, Club = Southampton, Value = 128, Price = 70 }
+Player { Index = 623, Positions = FW, Name = Brewster, Club = Liverpool, Value = 0, Price = 42 }
+-----------------------------------
+DEF
+Player { Index = 71, Positions = DEF, Name = Alexander-Arnold, Club = Liverpool, Value = 146, Price = 77 }
+Player { Index = 74, Positions = DEF, Name = Pereira, Club = Leicester, Value = 107, Price = 63 }
+Player { Index = 119, Positions = DEF, Name = Baldock, Club = Sheffield Utd, Value = 107, Price = 51 }
+Player { Index = 130, Positions = DEF, Name = Lundstram, Club = Sheffield Utd, Value = 115, Price = 50 }
+Player { Index = 277, Positions = DEF, Name = Pr_dl, Club = Watford, Value = 1, Price = 39 }
+-----------------------------------
+GK
+Player { Index = 10, Positions = GK, Name = Henderson, Club = Sheffield Utd, Value = 113, Price = 51 }
+Player { Index = 70, Positions = GK, Name = Button, Club = Brighton, Value = 0, Price = 39 }
+-----------------------------------
+10,542,551,280,283,291,343,71,74,119,130
+532,623,70,277
+Total value: 1475, Total cost: 998
+===============================================
+
+
+===============================================
+
+MID
+Player { Index = 283, Positions = MID, Name = De Bruyne, Club = Man City, Value = 161, Price = 108 }
+Player { Index = 291, Positions = MID, Name = Richarlison, Club = Everton, Value = 123, Price = 81 }
+Player { Index = 295, Positions = MID, Name = Maddison, Club = Leicester, Value = 110, Price = 75 }
+Player { Index = 310, Positions = MID, Name = Grealish, Club = Aston Villa, Value = 109, Price = 67 }
+Player { Index = 532, Positions = MID, Name = Hayden, Club = Newcastle, Value = 54, Price = 43 }
+-----------------------------------
+FW
+Player { Index = 542, Positions = FW, Name = Vardy, Club = Leicester, Value = 152, Price = 98 }
+Player { Index = 546, Positions = FW, Name = Rashford, Club = Man Utd, Value = 134, Price = 89 }
+Player { Index = 622, Positions = FW, Name = Connolly, Club = Brighton, Value = 40, Price = 43 }
+-----------------------------------
+DEF
+Player { Index = 71, Positions = DEF, Name = Alexander-Arnold, Club = Liverpool, Value = 146, Price = 77 }
+Player { Index = 72, Positions = DEF, Name = Robertson, Club = Liverpool, Value = 123, Price = 70 }
+Player { Index = 73, Positions = DEF, Name = van Dijk, Club = Liverpool, Value = 127, Price = 65 }
+Player { Index = 130, Positions = DEF, Name = Lundstram, Club = Sheffield Utd, Value = 115, Price = 50 }
+Player { Index = 277, Positions = DEF, Name = Pr_dl, Club = Watford, Value = 1, Price = 39 }
+-----------------------------------
+GK
+Player { Index = 10, Positions = GK, Name = Henderson, Club = Sheffield Utd, Value = 113, Price = 51 }
+Player { Index = 70, Positions = GK, Name = Button, Club = Brighton, Value = 0, Price = 39 }
+-----------------------------------
+10,542,546,283,291,295,310,71,72,73,130
+532,622,70,277
+Total value: 1508, Total cost: 995
+===============================================
+
+
+===============================================
+
+MID
+Player { Index = 280, Positions = MID, Name = Salah, Club = Liverpool, Value = 165, Price = 128 }
+Player { Index = 283, Positions = MID, Name = De Bruyne, Club = Man City, Value = 161, Price = 108 }
+Player { Index = 291, Positions = MID, Name = Richarlison, Club = Everton, Value = 123, Price = 81 }
+Player { Index = 324, Positions = MID, Name = P_rez, Club = Leicester, Value = 104, Price = 62 }
+Player { Index = 532, Positions = MID, Name = Hayden, Club = Newcastle, Value = 54, Price = 43 }
+-----------------------------------
+FW
+Player { Index = 542, Positions = FW, Name = Vardy, Club = Leicester, Value = 152, Price = 98 }
+Player { Index = 556, Positions = FW, Name = Pukki, Club = Norwich, Value = 119, Price = 65 }
+Player { Index = 622, Positions = FW, Name = Connolly, Club = Brighton, Value = 40, Price = 43 }
+-----------------------------------
+DEF
+Player { Index = 71, Positions = DEF, Name = Alexander-Arnold, Club = Liverpool, Value = 146, Price = 77 }
+Player { Index = 73, Positions = DEF, Name = van Dijk, Club = Liverpool, Value = 127, Price = 65 }
+Player { Index = 119, Positions = DEF, Name = Baldock, Club = Sheffield Utd, Value = 107, Price = 51 }
+Player { Index = 130, Positions = DEF, Name = Lundstram, Club = Sheffield Utd, Value = 115, Price = 50 }
+Player { Index = 277, Positions = DEF, Name = Pr_dl, Club = Watford, Value = 1, Price = 39 }
+-----------------------------------
+GK
+Player { Index = 10, Positions = GK, Name = Henderson, Club = Sheffield Utd, Value = 113, Price = 51 }
+Player { Index = 70, Positions = GK, Name = Button, Club = Brighton, Value = 0, Price = 39 }
+-----------------------------------
+10,542,556,280,283,291,324,71,73,119,130
+532,622,70,277
+Total value: 1527, Total cost: 1000
+===============================================
